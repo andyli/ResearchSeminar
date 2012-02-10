@@ -1,0 +1,341 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+   More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Regular Research Seminar</title>
+  <meta name="description" content="">
+  <meta name="author" content="Andy Li">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/text.css">
+  <link rel="stylesheet" href="css/960.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build incl. Respond.js
+   Respond is a polyfill for min/max-width media queries. Modernizr enables HTML5 elements & feature detects; 
+   for optimal performance, create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+  <header class="container_12">
+	<h1 class="grid_12">Regular Research Seminar</h1>
+  </header>
+  <div role="main" class="container_12">
+  	<div class="info info-when grid_4">
+		<h2>When</h2>
+		<iframe class="gcal" src="https://www.google.com/calendar/b/0/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFF&amp;src=erek8b5280adn2fdtorrlfguv8%40group.calendar.google.com&amp;color=%23373F47&amp;ctz=Asia%2FHong_Kong" style=" border-width:0 " width="300" height="300" frameborder="0" scrolling="no"></iframe>
+	</div>
+  	<div class="info info-what grid_4">
+		<h2>What</h2>
+		<p>The regular research smeminar is held for the research students of <a href="http://www.cityu.edu.hk/scm">School of Creative Media</a>, to present papers, brainstorm new ideas and discuss current projects.</p>
+		<p>It is generally being held every Wednesday. It will last 1-1.5 hours in total.</p>
+	</div>
+  	<div class="info info-who grid_4 clearfix">
+		<h2>Who</h2>
+		<h3>Advisors</h3>
+		<ul>
+			<li><a href="mailto:fuplus@gmail.com">Hongbo Fu</a></li>
+			<li><a href="mailto:oscarkcau@gmail.com">Oscar Kin-Chung Au</a></li>
+		</ul>
+		<h3>Students</h3>
+		<ul>
+			<li><a href="mailto:zhenghanlin.zju@gmail.com">Hanlin</a></li>
+			<li><a href="mailto:xupengfei@cse.ust.hk">Pengfei</a></li>
+			<li><a href="mailto:jingbo@cse.ust.hk">Jingbo</a></li>
+			<li><a href="mailto:tianye1313@126.com">Tianye</a></li>
+			<li><a href="mailto:hanxiaoguangcagd@gmail.com">Xiaoguang</a></li>
+			<li><a href="mailto:baobin84@gmail.com">Bao Bin</a></li>
+			<li><a href="mailto:andy@onthewings.net">Andy</a></li>
+			<li><a href="mailto:lchenaf@ust.hk">Arthur</a></li>
+		</ul>
+		<h3>Previous Students</h3>
+		<ul>
+			<li><a href="mailto:shishenghuang0@gmail.com">Shisheng</a></li>
+			<li><a href="mailto:gaolinorange@gmail.com">Gaolin</a></li>
+		</ul>
+	</div>
+	
+	<div class="topics grid_12 clearfix">
+		<h2>Topics</h2>
+		<ol id="seminar-items">
+			<li>
+				<h3>2011-12-07</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Tianye</div>
+						<div class="paper"><a href="http://www.mpi-inf.mpg.de/resources/makeup/index.html#material">Computer-suggested Facial Makeup</a></div>
+					</li>
+					<li>
+						<div class="presenter">Hanlin</div>
+						<div class="paper"><a href="http://graphics.ethz.ch/publications/papers/paperBar11.php">Mixed-Order Compositing for 3D Paintings</a></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>2011-11-30</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Arthur</div>
+						<div class="paper"><a href="http://studierstube.icg.tugraz.at/handheld_ar/cityofsights.php">The City of Sights: Design, Construction, and Measurement of an Augmented Reality Stage Set</a> [<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5643564&tag=1">paper</a>]</div>
+					</li>
+					<li>
+						<div class="presenter">Pengfei</div>
+						<div class="paper"><a href="http://web.siat.ac.cn/~vcc/publications/2011/retargetting/">Structure-Preserving Retargeting of Irregular 3D Architecture</a></div>
+					</li>
+					<li>
+						<div class="presenter">Jingbo</div>
+						<div class="paper"><a href="http://graphics.stanford.edu/~niloy/research/constrained_mesh/constrainedMesh_sigga11.html">Shape Space Exploration of Constrained Meshes</a></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>2011-11-23</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Xiaoguang</div>
+						<div class="paper"><a href="http://vmcl.xjtu.edu.cn/cgzhanglei/publications/TOG_11/arcimboldo_project.html">Arcimboldo-like Collage Using internet images</a></div>
+					</li>
+					<li>
+						<div class="presenter">Bao Bin</div>
+						<div class="paper"><a href="http://zurich.disneyresearch.com/OverCoat/">OverCoat: An Implicit Canvas for 3D Painting</a></div>
+					</li>
+					<li>
+						<div class="presenter">Andy</div>
+						<div class="paper"><a href="http://www.labri.fr/perso/hachet/publications/Toucheo.html">Toucheo: Multitouch and Stereo Combined in a Seamless Workspace (UIST 2011)</a></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>2011-11-16</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Tianye</div>
+						<div class="paper"><a href="http://research.microsoft.com/en-us/um/people/jiansun/papers/skyfinder_siggraph09.pdf">SkyFinder: Attribute-based Sky Image Search</a></div>
+					</li>
+					<li>
+						<div class="presenter">Hanlin</div>
+						<div class="paper"><a href="http://www.cs.virginia.edu/~gfx/pmwiki/index.php?n=Pubs.Holroyd2011CFM">Computing and Fabricating Multilayer Models</a></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>2011-11-09</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Arthur</div>
+						<div class="paper"><a href="http://kevinkarsch.com/publications/sa11.html">Rendering Synthetic Objects into Legacy Photographs</a></div>
+					</li>
+					<li>
+						<div class="presenter">Pengfei</div>
+						<div class="paper"><a href="http://www-graphics.stanford.edu/~vladlen/publications/pattern-aware.pdf">Pattern-Aware Shape Deformation Using Sliding Dockers</a></div>
+					</li>
+					<li>
+						<div class="presenter">Jingbo</div>
+						<div class="paper"><a href="http://dl.acm.org/citation.cfm?doid=1731047.1731056">Programmable rendering of line drawing from 3D scenes</a></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>2011-11-02</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Andy</div>
+						<div class="paper"><a href="http://dl.acm.org/citation.cfm?id=1979061">Understanding naturalness and intuitiveness in gesture production: insights for touchless gestural interfaces</a></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>2011-10-26</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Tianye</div>
+						<div class="paper"><a href="http://research.microsoft.com/en-us/um/people/jiansun/papers/PoissonMatting_SIGGRAPH04.pdf">Poisson Matting</a></div>
+						<div class="paper"><a href="http://personal.ie.cuhk.edu.hk/~hkm007/publications/cvpr11matting.pdf">A Global Sampling Method for Alpha Matting</a></div>
+					</li>
+					<li>
+						<div class="presenter">Xiaoguang</div>
+						<div class="paper"><a href="http://grail.cs.washington.edu/projects/candid_video_portraits/">Candid Portrait Selection From Video</a></div>
+					</li>
+					<li>
+						<div class="presenter">Bao Bin</div>
+						<div class="paper"><a href="http://hal.inria.fr/docs/00/07/82/99/PDF/TPAMI-Hilaire-Tombre-Jun06.pdf">Robust and Accurate Vectorization of Line Drawings</a></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>2011-10-19</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Hanlin</div>
+						<div class="paper"><a href="http://graphics.cs.cmu.edu/projects/crossDomainMatching/">Data-driven Visual Similarity for Cross-domain Image Matching (Siggraph Asia 2011)</a></div>
+					</li>
+					<li>
+						<div class="presenter">Pengfei</div>
+						<div class="paper"><a href="http://graphics.stanford.edu/~vladlen/publications/joint-segmentation.pdf">Joint Shape Segmentation with Linear Programming (Siggraph Asia 2011)</a></div>
+					</li>
+					<li>
+						<div class="presenter">Jingbo</div>
+						<div class="paper"><a href="http://web.mit.edu/cocosci/Papers/line-drawings-in-press-old.pdf">Learning Style Translation for the Lines of a Drawing</a></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>2011-10-12</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Shisheng</div>
+						<div class="paper"><a href="http://www.cs.ubc.ca/nest/imager/tr/2011/Micrography/">Digital Micrography</a></div>
+					</li>
+					<li>
+						<div class="presenter">Gaolin</div>
+						<div class="paper"><a href="http://perception.inrialpes.fr/~asharma/LearningShapeSegment/">Learning Shape Segmentation Using Constrained Spectral Clustering and Probabilistic Label Transfer</a></div>
+					</li>
+					<li>
+						<div class="presenter">Andy</div>
+						<div class="paper"><a href="http://dl.acm.org/citation.cfm?id=1979058">Your noise is my command: sensing gestures using the body as an antenna</a></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>2011-10-06</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Tianye</div>
+						<div class="paper"><a href="http://www.cs.sfu.ca/~ovankaic/personal/cosegmentation/">Unsupervised Co-Segmentation of a Set of Shapes via Descriptor-Space Spectral Clustering</a></div>
+					</li>
+					<li>
+						<div class="presenter">Xiaoguang</div>
+						<div class="paper"><a href="http://gvi.seas.harvard.edu/paper/video-face-replacement">Video Face Replacement</a></div>
+					</li>
+					<li>
+						<div class="presenter">Bao Bin</div>
+						<div class="paper"><a href="http://research.microsoft.com/en-us/um/people/kopf/pixelart/">Depixelizing Pixel Art</a></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>2011-09-21</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Hanlin</div>
+						<div class="paper"><a href="http://www.cs.bgu.ac.il/~asharf/publications.html">Conjoining Gestalt Rules for Abstraction of Architectural Drawings (SigAsia 11)</a></div>
+					</li>
+					<li>
+						<div class="presenter">Pengfei</div>
+						<div class="paper"><a href="http://graphics.stanford.edu/~niloy/research/slices/slices_sigga11.html">Slices: A Shape-proxy Based on Planar Sections</a></div>
+					</li>
+					<li>
+						<div class="presenter">Jingbo</div>
+						<div class="paper"><a href="http://www-sop.inria.fr/members/Francois.Bremond/Postscript/BechaCVPR2010.pdf">Gesture Recognition by Learning Local Motion Signatures</a></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>2011-09-14</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Shisheng</div>
+						<div class="paper"><a href="http://web.siat.ac.cn/~vcc/publications/2011/globfit/">GlobFit: Consistently Fitting Primitives by Discovering Global Relations</a></div>
+					</li>
+					<li>
+						<div class="presenter">Gaolin</div>
+						<div class="paper"><a href="http://www.cs.princeton.edu/~vk/CorrsBlended/">Blended Intrinsic Maps</a></div>
+					</li>
+					<li>
+						<div class="presenter">Andy</div>
+						<div class="paper"><a href="http://dl.acm.org/citation.cfm?id=1979142">2D Touching of 3D Stereoscopic Objects</a></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>2011-09-07</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Tianye</div>
+						<div class="paper"><a href="http://cg.cs.tsinghua.edu.cn/montage/">Sketch2Photo: Internet Image Montage</a></div>
+					</li>
+					<li>
+						<div class="presenter">Xiaoguang</div>
+						<div class="paper"><a href="http://media.au.tsinghua.edu.cn/vcharacter.htm">Video-based Characters - Creating New Human Performances from a Multi-view Video Database</a></div>
+					</li>
+					<li>
+						<div class="presenter">Bao Bin</div>
+						<div class="paper"><a href="http://gruvi.cs.sfu.ca/projects/volume-aware-surface-evolution-surface-reconstruction-incomplete-point-clouds">Volume-Aware Surface Evolution for Surface Reconstruction from Incomplete Point Clouds</a></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>2011-09-02</h3>
+				<ul class="presents">
+					<li>
+						<div class="presenter">Hanlin</div>
+						<div class="paper"><a href="http://dl.acm.org/citation.cfm?id=2024687">Image simplification and vectorization, NPAR11</a></div>
+						<div class="paper"><a href="http://www.cg.tuwien.ac.at/research/publications/2011/jeschke-2011-est/">Estimating Color and Texture Parameters for Vector Graphics, EG11</a></div>
+					</li>
+					<li>
+						<div class="presenter">Pengfei</div>
+						<div class="paper"><a href="http://www-ui.is.s.u-tokyo.ac.jp/~kenshi/GeoBrush/index.html">GeoBrush: Interactive Mesh Geometry Cloning</a></div>
+					</li>
+					<li>
+						<div class="presenter">Jingbo</div>
+						<div class="paper"><a href="http://dl.acm.org/citation.cfm?doid=2010324.1964928">Exploration of Continuous Variability in Collections of 3D Shapes (Siggraph11)</a></div>
+					</li>
+				</ul>
+			</li>
+		</ol>
+	</div>
+  </div>
+  <footer class="container_12">
+  	<div class="grid_12"><p>Web page maintainer: <a href="mailto:andy@onthewings.net">Andy</a></p></div>
+  </footer>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.4.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via build script -->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts -->
+
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+</body>
+</html>
