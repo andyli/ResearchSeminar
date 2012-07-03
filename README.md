@@ -5,7 +5,7 @@
 * [960.gs](http://960.gs/)
 
 ## Steps for updating website
-```shell
+```sh
 git pull origin master #just in case the site is edited somewhere else
 #edit files
 cd build && ant && cd .. #build the website to the folder *publish*
