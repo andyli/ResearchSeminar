@@ -16,6 +16,22 @@ module.exports = function (grunt) {
         dist: 'dist'
     };
 
+    var releaseBranchOptions = {
+        app: {
+            options: {
+                releaseBranch: 'gh-pages',
+                remoteRepository: 'origin',
+                distDir: 'dist',
+                commitMessage: 'sync with master',
+                commit: true,
+                push: true,
+                blacklist: [
+                    '.git'
+                ]
+            }
+        }
+    };
+
     grunt.initConfig({
         yeoman: yeomanConfig,
         watch: {
@@ -274,12 +290,8 @@ module.exports = function (grunt) {
                 'htmlmin'
             ]
         },
-        'gh-pages': {
-            options: {
-                base: 'dist'
-            },
-            src: ['**/*']
-        }
+        releaseBranchPre: releaseBranchOptions,
+        releaseBranch: releaseBranchOptions
     });
 
     grunt.registerTask('server', function (target) {
@@ -311,5 +323,11 @@ module.exports = function (grunt) {
     grunt.registerTask('default', [
         'jshint',
         'build'
+    ]);
+
+    grunt.registerTask('deploy', [
+        'releaseBranchPre',
+        'build',
+        'releaseBranch'
     ]);
 };
