@@ -273,6 +273,12 @@ module.exports = function (grunt) {
                 'svgmin',
                 'htmlmin'
             ]
+        },
+        'gh-pages': {
+            options: {
+                base: 'dist'
+            },
+            src: ['**/*']
         }
     });
 
