@@ -12,13 +12,7 @@ git pull origin master                         #just in case the site is edited 
 grunt                                          #build the website to the folder *dist*
 git commit -am "updated for yyyy-mm-dd"        #save changes if everything goes well
 git push origin master                         #push updated source code
-git checkout gh-pages
-git pull origin gh-pages
-ls -1 | grep -v 'dist' | xargs -I {} rm -rf {} #remove everything except *dist*
-cp -a dist/* dist/[^.]* .                      #copy everything in *dist* to root
-rm -rf dist                                    #remove *dist*
-git add .
-git commit -am "sync with master"
+grunt deploy                                   #deploy to *gh-pages* branch
 git push origin gh-pages                       #push the website live!
 git checkout master                            #dont forget to switch back
 ```
